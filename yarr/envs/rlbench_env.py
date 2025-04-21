@@ -201,11 +201,6 @@ class RLBenchEnv(Env):
         if self._include_lang_goal_in_obs:
             extracted_obs['lang_goal'] = self._lang_goal
             extracted_obs['lang_goal_tokens'] = tokenize([self._lang_goal])[0].numpy()
-            # with open("/fs-computility/efm/shared/datasets/caizetao/PPI/pretrained_models/instruction_embeddings.pkl","rb") as f:
-            #     text_embedding_list = pickle.load(f)
-            # #print(self._lang_goal)
-            # extracted_obs['lang_goal_emb'] = text_embedding_list[self._lang_goal]
-            #print(text_embedding_list[self._lang_goal])
         return extracted_obs
 
     def launch(self):

@@ -7,9 +7,7 @@ from rlbench.backend.observation import Observation
 import imageio
 import cv2
 
-os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = '/fs-computility/efm/shared/datasets/caizetao/PPI/envs/Coppeliasim'
-
-
+# os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = <YOUR_PATH_TO_COPPELIASIM>
 
 class CameraMotion(object):
     def __init__(self, cam: VisionSensor):
